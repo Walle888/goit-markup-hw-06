@@ -904,7 +904,7 @@ font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: #757575;
-margin-left: 20px;
+margin-left: 35px;
 }
 
 .modal-form-policy{
@@ -925,10 +925,11 @@ margin-left: 4px;
     border: 2px solid var(--b-dark);
     border-radius: 2px;
     position: absolute;
-    margin-left: -20px;
+    margin-left: -23px;
+    transition:  background-color 250ms var(--cubic);
 }
 
-.modal-form-policy-text:checked + .modal-form-svg {
+.modal-form-policy:checked + .modal-form-svg {
     background-color: var(--fha-blue);
     border: none;
     }
@@ -961,16 +962,17 @@ pointer-events: none;
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: var(--txt-white);
-    width: 200px;
+    min-width: 200px;
     background-color: transparent;
     background: var(--fha-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
     cursor: pointer;
-    margin-left: 25%;
     margin-top: 30px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .modal-form-btn:focus,
