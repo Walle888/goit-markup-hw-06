@@ -928,7 +928,7 @@ margin-left: 4px;
     margin-left: -20px;
 }
 
-.modal-policy-input:checked + .modal-form-svg {
+.modal-form-policy-text:checked + .modal-form-svg {
     background-color: var(--fha-blue);
     border: none;
     }
