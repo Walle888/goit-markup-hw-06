@@ -894,12 +894,9 @@ fill: var(--fha-blue);
     outline: none;
     border-color: var(--fha-blue);
 }
-.modal-form-policy:checked + .modal-form-policy-text::before {
-background-color: var(--fha-blue);
-border: var(--fha-blue);
-}
 
 .modal-form-policy-text{
+    position: relative;
 display: flex;
 align-items: center;
 font-weight: 400;
@@ -907,19 +904,9 @@ font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: #757575;
+margin-left: 20px;
 }
 
-.modal-form-policy-text::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border: 3px solid var(--b-dark);
-    margin-right: 8px;
-    border-radius: 4px;
-
-
-}
 .modal-form-policy{
     position: relative;
 }
@@ -935,9 +922,16 @@ margin-left: 4px;
 }
 
 .modal-form-svg{
+    border: 2px solid var(--b-dark);
+    border-radius: 2px;
     position: absolute;
-    left: 39px;
+    margin-left: -20px;
 }
+
+.modal-policy-input:checked + .modal-form-svg {
+    background-color: var(--fha-blue);
+    border: none;
+    }
 
 .close-btn{
 display: flex;
@@ -975,6 +969,7 @@ pointer-events: none;
     padding: 10px 32px;
     cursor: pointer;
     margin-left: 25%;
+    margin-top: 30px;
     border: none;
     }
 

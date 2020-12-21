@@ -504,14 +504,15 @@
         Коментарий
         <textarea class="modal-form-massege" name="user-message" placeholder="Введите текст"></textarea>
     </label>
-    <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy visually-hidden">
-
+    
     <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю
         <a class="modal-form-policy-link" href="#">Условия договора</a>
-        <svg class="modal-form-svg" width="16px" height="16px">
-            <use href="./images/sprite.svg#icon-Vector">
-        </use>
-        </svg>
+        <input id="user-policy" type="checkbox" name="user-policy" 
+        value="accept-policy" class="modal-policy-input visually-hidden">
+    <svg class="modal-form-svg" width="16px" height="16px">
+        <use href="./images/sprite.svg#icon-Vector">
+    </use>
+    </svg>
     </label>
         <button type="submit" class="modal-form-btn">Отправить</button> 
     
